@@ -1,0 +1,118 @@
+/* [BLOCK: base_reset] */
+/* Reset HTML and body defaults */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Trebuchet MS, sans-serif;
+    background-color: #FDF6E3;
+    overflow: hidden; /* Prevent unnecessary scrollbars on the window */
+}
+/* [END BLOCK] */
+
+/* [BLOCK: body_layout] */
+/* Center the calculator both vertically and horizontally */
+body {
+    font-family: Trebuchet MS, sans-serif;
+    background-color: #FDF6E3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+/* [END BLOCK] */
+
+/* [BLOCK: calculator_container] */
+/* Container for calculator input and output */
+#calculator {
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+/* [END BLOCK] */
+
+/* [BLOCK: input_output_styling] */
+/* Styling shared by input and output areas */
+input, #output {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Trebuchet MS, sans-serif;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #555;
+    text-align: left;
+}
+/* [END BLOCK] */
+
+/* [BLOCK: input_focus] */
+/* Prevent red border on focus */
+input:focus {
+    outline: none;
+    border: 1px solid #ccc; /* Same as default border */
+}
+/* [END BLOCK] */
+
+/* [BLOCK: output_box] */
+/* Additional spacing and placeholder styling for output */
+#output {
+    margin-top: 10px;
+    min-height: 30px;
+}
+
+#output::placeholder {
+    font-weight: normal;
+    color: #555;
+}
+/* [END BLOCK] */
+
+/* [BLOCK: button_styling] */
+/* Clear button styling */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: black;
+    background-color: #ECDEC9;
+    border: 5px solid #D3D3D3;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #C8A57B;
+}
+/* [END BLOCK] */
+
+/* [BLOCK: title_bar] */
+/* Custom draggable title bar */
+.title-bar {
+    -webkit-app-region: drag;
+    background-color: white;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 14px;
+    font-family: Trebuchet MS, sans-serif;
+    color: #767676;
+    border-bottom: 1px solid #ccc;
+    height: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* [END BLOCK] */

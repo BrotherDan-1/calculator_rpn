@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+# dependencies
+node_modules/
+
+# build
+out/
+dist/
+
+# misc
+.DS_Store

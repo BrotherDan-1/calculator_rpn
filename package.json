@@ -1,0 +1,16 @@
+{
+  "name": "calculator_reverse_polish_notation",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["electron", "calculator"],
+  "author": "",
+  "license": "ISC",
+  "description": "Electron-based reverse polish notation calculator.",
+  "devDependencies": {
+    "electron": "^34.0.2"
+  }
+}

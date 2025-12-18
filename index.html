@@ -1,0 +1,57 @@
+<!-- [BLOCK: html_boilerplate] -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- [END BLOCK] -->
+
+<!-- [BLOCK: head] -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Polish Notation Calculator</title> <!-- Note: Typo in "Simple" preserved as-is -->
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS for styling -->
+</head>
+<!-- [END BLOCK] -->
+
+<!-- [BLOCK: body_start] -->
+<body>
+<!-- [END BLOCK] -->
+
+    <!-- [BLOCK: title_bar] -->
+    <!-- Custom title bar for frameless Electron window -->
+    <div id="title-bar" class="title-bar">Reverse Polish Notation Calculator</div>
+    <br>
+    <!-- [END BLOCK] -->
+
+    <!-- [BLOCK: calculator_container] -->
+    <div id="calculator">
+        <br>
+        <!-- [BLOCK: command_input] -->
+        <!-- Text input for entering arithmetic commands -->
+        <input type="text" id="commandInput" placeholder="Enter your calculation...">
+        <!-- [END BLOCK] -->
+
+        <!-- [BLOCK: output_display] -->
+        <!-- Output area for displaying results -->
+        <div id="output">Results...</div>
+        <br>
+        <!-- [END BLOCK] -->
+
+        <!-- [BLOCK: clear_button] -->
+        <!-- Button to clear the input/output fields -->
+        <button id="clearButton">Clear</button>
+        <!-- [END BLOCK] -->
+    </div>
+    <!-- [END BLOCK] -->
+
+    <!-- [BLOCK: renderer_script] -->
+    <!-- Main renderer script to handle input, calculation, and output -->
+    <script src="renderer.js"></script>
+    <!-- [END BLOCK] -->
+
+<!-- [BLOCK: body_end] -->
+</body>
+<!-- [END BLOCK] -->
+
+<!-- [BLOCK: html_end] -->
+</html>
+<!-- [END BLOCK] -->
